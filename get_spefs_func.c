@@ -15,6 +15,7 @@ int (*get_spefs_func(const char *fmt))(va_list)
 	spef_t spefs[] = {
 		{"c", handle_c},
 		{"s", handle_s},
+		{"di", handle_di},
 		/* Add structs for other specifiers here */
 		{NULL, NULL},
 	};
