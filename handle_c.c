@@ -9,7 +9,7 @@
 
 int handle_c(va_list c)
 {
-	char cc = va_arg(c, int);
+	char cc = (char)va_arg(c, int);
 
 	_putchar(cc);
 	return (1);
