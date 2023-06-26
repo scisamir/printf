@@ -24,5 +24,6 @@ int (*get_spefs_func(const char *fmt))(va_list);
 /* Specifier handler functions */
 int handle_c(va_list c);
 int handle_s(va_list s);
+int handle_di(va_list di);
 
 #endif /* __PRINT_F__ */
