@@ -36,6 +36,9 @@ int get_int(int num)
 	}
 	_putchar(num % 10 + '0');
 	r_value++;
+
+	return (r_value);
+
 }
 
 int handle_di(va_list di)
@@ -44,7 +47,7 @@ int handle_di(va_list di)
 
 	int de_int = va_arg(di, int);
 
-	get_int(de_int);
+	r_value = get_int(de_int);
 
 
 	return (r_value);
