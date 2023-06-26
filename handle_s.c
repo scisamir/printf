@@ -12,6 +12,9 @@ int handle_s(va_list s)
 	int count = 0;
 	char *str = va_arg(s, char *);
 
+	if (str == NULL)
+		str = "(null)";
+
 	while (*str)
 	{
 		_putchar(*str++);
