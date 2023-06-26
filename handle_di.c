@@ -41,6 +41,13 @@ int get_int(int num)
 
 }
 
+/**
+ * handle_di - handles the specifiers, 'd' and 'i'
+ * @di: the variable argument(s) passed to _printf
+ *
+ * Return: the number of character(s) printed
+ */
+
 int handle_di(va_list di)
 {
 	int r_value = 0;
@@ -48,7 +55,6 @@ int handle_di(va_list di)
 	int de_int = va_arg(di, int);
 
 	r_value = get_int(de_int);
-
 
 	return (r_value);
 }
