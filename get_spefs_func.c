@@ -17,6 +17,7 @@ int (*get_spefs_func(const char *fmt))(va_list)
 		{"s", handle_s},
 		{"d", handle_di},
 		{"i", handle_di},
+		{"b", handle_b},
 		{"r", handle_r},
 		{"R", handle_rot13},
 		/* Add structs for other specifiers here */
