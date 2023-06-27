@@ -19,7 +19,7 @@ void convert(unsigned int num, int *count)
 }
 
 /**
- * handle_rot13 - handles the specifier, 'b' which converts a decimal to binary
+ * handle_b - handles the specifier, 'b' which converts a decimal to binary
  * @b: the variable argument(s) passed to _printf
  *
  * Return: the number of character(s) printed
