@@ -18,4 +18,5 @@ This is a custom implementation of the **'printf'** function which handles the f
 ## Additional Features
 
 * It handles conversion of unsigned int to binary
-*
+* It handles the printing of strings in reverse
+* It handles rot13'ed string 
