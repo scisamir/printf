@@ -41,6 +41,15 @@ type (pointer to a string). Characters from the array are written up to
 .B d, i
 The int argument is converted to signed decimal notation.
 .TP
+.B b
+The int argument is converted to binary.
+.TP
+.B r
+The string argument is reversed.
+.TP
+.B R
+The string argument is encryted using ROT13.
+.TP
 .B %
 A '%' is written.  No argument is converted.  The complete conversion 
 specification is '%%'.
