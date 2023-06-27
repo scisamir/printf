@@ -2,6 +2,7 @@
 #define __PRINT_F__
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 
 /**
@@ -25,6 +26,8 @@ int (*get_spefs_func(const char *fmt))(va_list);
 int handle_c(va_list c);
 int handle_s(va_list s);
 int handle_di(va_list di);
+int handle_b(va_list b);
 int handle_r(va_list r);
+int handle_rot13(va_list rot13);
 
 #endif /* __PRINT_F__ */

@@ -13,10 +13,11 @@ int get_int(int num)
 	int n, r_value = 0;
 
 	/* check if num is 0 */
-	if (num == 0)
+	if (!num)
 	{
 		_putchar(0 + '0');
 		r_value++;
+		return (r_value);
 	}
 
 	/* check for negative value */
