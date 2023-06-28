@@ -14,6 +14,8 @@ char *rot13ed(char *str)
 	char nm[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rt[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
+	if (str != NULL)
+	{
 	while (str[len])
 		len++;
 
@@ -41,6 +43,9 @@ char *rot13ed(char *str)
 	}
 
 	return (rot13_str);
+	}
+	else
+		return (NULL);
 }
 
 
