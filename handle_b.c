@@ -32,7 +32,5 @@ int handle_b(va_list b)
 
 	convert(bin, &r_value);
 
-	printf("count: %d", r_value);
-
 	return (r_value);
 }
