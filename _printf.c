@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * check_format - checks for a valid specifier
+ * @c: the character to be checked as a specifier
+ *
+ * Return: 1 if a valid specifier is found otherwise 0
+ */
+
+int check_format(char c)
+{
+	if (c == '%' || c == 'c' || c == 's' || c == 'd' ||
+		c == 'i' || c == 'b' || c == 'r' || c == 'R')
+		return (1);
+	return (0);
+}
+
+
+/**
  * _printf - writes output to stdout, the standard output stream
  * @format: format is a character string.
  * The format string is composed of zero or more directives
@@ -21,7 +37,7 @@ int _printf(const char *format, ...)
 
 	while (format && format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && check_format(format[i + 1]))
 		{
 			i++;
 
