@@ -55,6 +55,23 @@ int handle_di(va_list di)
 
 	int de_int = va_arg(di, int);
 
+	if (de_int == INT_MIN)
+	{
+		_putchar('-');
+		_putchar('2');
+		_putchar('1');
+		_putchar('4');
+		_putchar('7');
+		_putchar('4');
+		_putchar('8');
+		_putchar('3');
+		_putchar('6');
+		_putchar('4');
+		_putchar('8');
+
+		return (11);
+	}
+
 	r_value = get_int(de_int);
 
 	return (r_value);
